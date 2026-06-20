@@ -1,25 +1,26 @@
-💣 Zip of Death (42.zip)
+# 💣 Zip of Death (42.zip)
 
-A Zip Bomb (also known as a Decompression Bomb or Zip of Death) is a specially crafted compressed archive designed to overwhelm a system by expanding into an enormous amount of data when extracted.
+A **Zip Bomb** (also known as a *Decompression Bomb* or *Zip of Death*) is a specially crafted compressed archive designed to overwhelm a system by expanding into an enormous amount of data when extracted.
 
 Although the archive itself is very small, its contents can consume excessive disk space, memory, and processing power during decompression. Historically, zip bombs have been used to disrupt antivirus scanners and other applications that automatically inspect compressed files.
 
 Unlike traditional malware, a zip bomb does not execute malicious code. Instead, it exploits the normal behavior of archive extraction software by forcing it to process an impractically large amount of data.
 
-«Note: Most modern antivirus and archive analysis tools can detect known zip bombs and prevent extraction before system resources are exhausted.»
+> **Note:** Most modern antivirus and archive analysis tools can detect known zip bombs and prevent extraction before system resources are exhausted.
 
 ---
 
-📦 About 42.zip
+## 📦 About 42.zip
 
-This repository contains the famous 42.zip archive bomb.
+This repository contains the famous **42.zip** archive bomb.
 
-The archive is only 42 KB in size but expands through five layers of nested ZIP files, with each layer containing 16 additional archives. At the deepest level, each archive contains a file of approximately 4.3 GB, resulting in a theoretical total of approximately 4.5 Petabytes (PB) of uncompressed data.
+The archive is only **42 KB** in size but expands through **five layers of nested ZIP files**, with each layer containing **16 additional archives**. At the deepest level, each archive contains a file of approximately **4.3 GB**, resulting in a theoretical total of approximately **4.5 Petabytes (PB)** of uncompressed data.
 
 If fully extracted, the archive can quickly exhaust available storage space and potentially cause severe performance issues on the host system.
 
-Expansion Structure
+### Expansion Structure
 
+```text
 16 ×       4,294,967,295 bytes =        68,719,476,720 bytes ( 68.7 GB)
 16 ×      68,719,476,720 bytes =     1,099,511,627,520 bytes (  1.1 TB)
 16 ×   1,099,511,627,520 bytes =    17,592,186,040,320 bytes ( 17.6 TB)
