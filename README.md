@@ -29,13 +29,7 @@ If fully extracted, the archive can quickly exhaust available storage space and 
 
 ---
 
-🎥 Documentary
 
-Watch the documentary here:
-
-"📺 View Documentary" (https://drive.google.com/file/d/1Zq7SoyLdZ90PyAdXWHtdcER6v6Fe3TUM/view?usp=drivesdk)
-
----
 
 🔐 Password
 
