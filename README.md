@@ -56,6 +56,12 @@ Watch the documentary here:
 
 ---
 
+## 📄 License
+
+MIT © Dev Asik
+
+---
+
 ## ⚠️ Warning
 
 This archive is provided **strictly for educational, research, and demonstration purposes only**.
@@ -79,3 +85,4 @@ This repository is intended to demonstrate:
 - Defensive detection techniques
 
 Use only in controlled environments for educational or research purposes.
+
