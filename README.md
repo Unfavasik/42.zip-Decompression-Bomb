@@ -1,26 +1,35 @@
-# 💣 Zip of Death (42.zip)
 
-A **Zip Bomb** (also known as a *Decompression Bomb* or *Zip of Death*) is a specially crafted compressed archive designed to overwhelm a system by expanding into an enormous amount of data when extracted.
+💣 Zip of Death (42.zip)
 
-Although the archive itself is very small, its contents can consume excessive disk space, memory, and processing power during decompression. Historically, zip bombs have been used to disrupt antivirus scanners and other applications that automatically inspect compressed files.
+A Zip Bomb (also known as a Decompression Bomb or Zip of Death) is a specially crafted compressed archive designed to overwhelm a system by expanding into an enormous amount of data when extracted.
+
+Although the archive itself is extremely small, its contents can consume massive amounts of disk space, memory, and CPU resources during decompression. Historically, zip bombs have been used to disrupt antivirus scanners and automated file analysis systems.
 
 Unlike traditional malware, a zip bomb does not execute malicious code. Instead, it exploits the normal behavior of archive extraction software by forcing it to process an impractically large amount of data.
 
-> **Note:** Most modern antivirus and archive analysis tools can detect known zip bombs and prevent extraction before system resources are exhausted.
+«Note: Most modern antivirus and archive analysis tools can detect known zip bombs and prevent extraction before system resources are exhausted.»
 
 ---
 
-## 📦 About 42.zip
+📦 About 42.zip
 
-This repository contains the famous **42.zip** archive bomb.
+This repository contains the famous 42.zip archive bomb.
 
-The archive is only **42 KB** in size but expands through **five layers of nested ZIP files**, with each layer containing **16 additional archives**. At the deepest level, each archive contains a file of approximately **4.3 GB**, resulting in a theoretical total of approximately **4.5 Petabytes (PB)** of uncompressed data.
+Property| Value
+Compressed Size| ~42 KB
+Archive Layers| 5
+Archives per Layer| 16
+Deepest File Size| ~4.3 GB
+Total Uncompressed Size| ~4.5 PB
+
+The archive expands through five layers of nested ZIP files, with each layer containing 16 additional archives. At the deepest level, each archive contains a file of approximately 4.3 GB, resulting in a theoretical total of approximately 4.5 Petabytes (PB) of uncompressed data.
 
 If fully extracted, the archive can quickly exhaust available storage space and potentially cause severe performance issues on the host system.
 
-### Expansion Structure
+---
 
-```text
+📊 Expansion Structure
+
 16 ×       4,294,967,295 bytes =        68,719,476,720 bytes ( 68.7 GB)
 16 ×      68,719,476,720 bytes =     1,099,511,627,520 bytes (  1.1 TB)
 16 ×   1,099,511,627,520 bytes =    17,592,186,040,320 bytes ( 17.6 TB)
@@ -29,6 +38,13 @@ If fully extracted, the archive can quickly exhaust available storage space and 
 
 ---
 
+🎥 Documentary
+
+Watch the documentary here:
+
+📺 "View Documentary" (https://drive.google.com/file/d/1Zq7SoyLdZ90PyAdXWHtdcER6v6Fe3TUM/view?usp=drivesdk)
+
+---
 
 🔐 Password
 
@@ -38,15 +54,24 @@ If fully extracted, the archive can quickly exhaust available storage space and 
 
 ⚠️ Warning
 
-This archive is provided for educational, research, and demonstration purposes only.
+This archive is provided strictly for educational, research, and demonstration purposes only.
 
-Do not extract this archive on systems where storage, memory, or system stability may be affected. The author assumes no responsibility for any damage, data loss, or disruption resulting from misuse of this file.
+Extracting this archive may rapidly consume available storage resources and could lead to system instability, application crashes, or data loss.
 
+Do not extract this file on production systems or devices containing important data.
+
+The author assumes no responsibility for any damage, data loss, service disruption, or other consequences resulting from the use or misuse of this archive.
 
 ---
 
-# 🎥 Documentary
+📚 Educational Purpose
 
-Watch the documentary here:
+This repository is intended to demonstrate:
 
-"📺 View Documentary" (https://drive.google.com/file/d/1Zq7SoyLdZ90PyAdXWHtdcER6v6Fe3TUM/view?usp=drivesdk)
+- Decompression bombs
+- Resource exhaustion attacks
+- Archive analysis limitations
+- Security research concepts
+- Defensive detection techniques
+
+Use only in controlled environments for educational or research purposes.
